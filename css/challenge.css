@@ -1,0 +1,193 @@
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    background: #292929;
+    text-align: center;
+    height: 260px;
+    padding: 110px 0 100px 0;
+    margin-bottom: 70px;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.skill-list {
+    border: 2px solid #C9C9C9;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.skill-title > p {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Jeju Gothic';
+    margin-left: 55px;
+    margin-bottom: 15px;
+    top: -12px;
+    position: absolute;
+    background-color: #DADADA;
+    padding: 0 10;
+}
+
+.skill-table {
+    display: table;
+    width: 100%;
+    padding: 30 20;
+}
+
+.skill-row {
+    display: table-row;
+}
+
+.skill-cell {
+    display:table-cell;
+    width: 340px;
+}
+
+
+
+.skill-thumnail {
+    margin: 10 auto;
+    border-radius: 3px;
+    width: 250px;
+    height: 170px;
+    margin-bottom: 15px;
+}
+
+.skill-image {
+    width: 250px;
+    height: 170px;
+    border-radius: 8px;
+}
+
+.skill-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skill-subtitle {
+    font-weight: 600;
+    font-size: min(17px, 2vw);
+    font-family: 'Jeju Gothic';
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    container{
+        width: 100%;
+    }
+
+    .skill-box {
+        margin: 30 min(35px, 1vw);
+    }
+
+    .skill-thumnail,
+    .skill-image {
+        width: 25vw;
+    }
+}
+
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.popup > iframe {
+    margin: auto;
+    width: 64vw;
+    height: 36vw;
+}
+  
+
+.bg {
+    background-color: black;
+    opacity: 0.65;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    position: fixed;
+    top: 0%;
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .skill-table,
+    .skill-row,
+    .skill-cell {
+        display: block;
+    }
+
+    .skill-table {
+        padding-bottom: 10px;
+    }
+
+    .skill-cell {
+        position: relative;
+        border-bottom: 1px solid #A7A7A7;
+        vertical-align: text-top;
+        padding: 10px auto;
+        width: 100%;
+    }
+    .skill-table .skill-cell:last-child{
+        border: none;
+    }
+
+    .skill-title > p {
+        margin-left: 20px;
+    }
+
+
+    .skill-thumnail {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+    }
+
+    .skill-image {
+        width: 150px;
+        height: 100px;
+    }
+
+    .skill-info {
+        position: absolute;
+        display: inline-block;
+        margin-left: 25px;
+        top: 45px;
+    }
+
+    .skill-subtitle {
+        font-size: 17px;
+    }
+
+}
